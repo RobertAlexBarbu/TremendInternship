@@ -82,32 +82,42 @@ Finally, everything works as intended!
 So the first thing I did was get a workflow template from GitHub for creating Docker images
 
 ![Result](./assets/11.png)
+
 ![Result](./assets/12.png)
 
 Then I made a push to see if it works and I got the following error
+
 ![Result](./assets/13.png)
+
 The problem was that my Dockerfile is not in the root folder but inside /2-app so I had to change the working directory. I also changed to tag to contain the **commit hash**
+
 ![Result](./assets/14.png)
 
 Now let's make another push.
+
 ![Result](./assets/15.png)
+
 ![Result](./assets/16.png)
 
 Now I need to **push the Docker Image to my Docker Hub repository**. I added my credentials to GitHub secrets and logged in using them. Then I pushed the image to Docker Hub.
 
 ![Result](./assets/18.png)
+
 ![Result](./assets/17.png)
 
 Let's make another push and test if it works.
+
 ![Result](./assets/19.png)
 
-It seems like I successfully log in to DockerHub but the push fails.
+It seems like I successfully log in to Docker Hub but the push fails.
 After some research I found out that the tag needs to contain the name of the repo I push to so I modified that
 
 ![Result](./assets/20.png)
 
 Then I made another push and everything worked accordingly!
+
 ![Result](./assets/21.png)
+
 ![Result](./assets/22.png)
 
 
