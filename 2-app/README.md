@@ -18,7 +18,7 @@ docker run -p 8080:8080 -d app
 I map the port 8080 of the container to the 8080 port of my pc usign `-p 8080:8080`
 ![Result](./assets/1.png)
 
-The returned string is the Container ID
+The returned string is the Container ID.
 
 ### Testing
 
